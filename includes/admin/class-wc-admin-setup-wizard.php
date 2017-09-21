@@ -1257,10 +1257,11 @@ class WC_Admin_Setup_Wizard {
 				<img src="<?php echo esc_url( WC()->plugin_url() . '/assets/images/jetpack-green-logo.svg' ); ?>" alt="Jetpack" />
 				<input type="submit" class="button-primary button button-large button-jetpack-connect" value="<?php esc_attr_e( 'Connect with Jetpack', 'woocommerce' ); ?>" />
 				<input type="hidden" name="save_step" value="activate" />
-				<h3><?php esc_html_e( "Bonus reasons you'll love Jetpack", 'woocommerce' ); ?></h3>
+
 			</div>
+			<h3 class="jetpack-reasons"><?php esc_html_e( "Bonus reasons you'll love Jetpack", 'woocommerce' ); ?></h3>
 			<ul class="wc-wizard-features">
-				<li class="wc-wizard-feature-item first">
+				<li class="wc-wizard-feature-item">
 					<p class="wc-wizard-feature-name">
 						<strong><?php esc_html_e( 'Better security', 'woocommerce' ); ?></strong>
 					</p>
@@ -1268,7 +1269,7 @@ class WC_Admin_Setup_Wizard {
 						<?php esc_html_e( 'Protect your store from unauthorized access.', 'woocommerce' ); ?>
 					</p>
 				</li>
-				<li class="wc-wizard-feature-item last">
+				<li class="wc-wizard-feature-item">
 					<p class="wc-wizard-feature-name">
 						<strong><?php esc_html_e( 'Store stats', 'woocommerce' ); ?></strong>
 					</p>
@@ -1276,7 +1277,7 @@ class WC_Admin_Setup_Wizard {
 						<?php esc_html_e( 'Get insights on how your store is doing, including total sales, top products, and more.', 'woocommerce' ); ?>
 					</p>
 				</li>
-				<li class="wc-wizard-feature-item first">
+				<li class="wc-wizard-feature-item">
 					<p class="wc-wizard-feature-name">
 						<strong><?php esc_html_e( 'Store monitoring', 'woocommerce' ); ?></strong>
 					</p>
@@ -1284,7 +1285,7 @@ class WC_Admin_Setup_Wizard {
 						<?php esc_html_e( 'Get an alert if your store is down for even a few minutes.', 'woocommerce' ); ?>
 					</p>
 				</li>
-				<li class="wc-wizard-feature-item last">
+				<li class="wc-wizard-feature-item">
 					<p class="wc-wizard-feature-name">
 						<strong><?php esc_html_e( 'Product promotion', 'woocommerce' ); ?></strong>
 					</p>
