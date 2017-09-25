@@ -962,6 +962,7 @@ class WC_Admin_Setup_Wizard {
 						'type'        => 'email',
 						'value'       => $user_email,
 						'placeholder' => __( 'Stripe email address', 'woocommerce' ),
+						'required'    => true,
 					),
 				),
 				'featured' => true,
@@ -988,6 +989,7 @@ class WC_Admin_Setup_Wizard {
 						'type'        => 'email',
 						'value'       => $user_email,
 						'placeholder' => __( 'PayPal email address', 'woocommerce' ),
+						'required'    => true,
 					),
 				),
 			),
@@ -1069,6 +1071,7 @@ class WC_Admin_Setup_Wizard {
 								name="<?php echo esc_attr( $item_id ); ?>_<?php echo esc_attr( $setting_id ); ?>"
 								value="<?php echo esc_attr( $setting['value'] ); ?>"
 								placeholder="<?php echo esc_attr( $setting['placeholder'] ); ?>"
+								<?php echo ( $setting['required'] ) ? 'required' : ''; ?>
 							/>
 						<?php endforeach; ?>
 					</div>
